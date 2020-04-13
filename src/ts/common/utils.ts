@@ -1,3 +1,3 @@
 export function hex(i: number) {
-	return i.toString(16)
+  return i.toString(16);
 }
