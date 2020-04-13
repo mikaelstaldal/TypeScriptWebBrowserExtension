@@ -31,6 +31,11 @@ module.exports = {
 		new CheckerPlugin(),
 		new CopyWebpackPlugin([
 			{
+				from: path.join(sourceRootPath, 'assets'),
+				to: path.join(distRootPath, 'assets'),
+				test: /\.(jpg|jpeg|png|gif|svg|ogg)?$/,
+			},
+			{
 				from: path.join(sourceRootPath, 'manifest.json'),
 				to: path.join(distRootPath, 'manifest.json'),
 				toType: 'file',
