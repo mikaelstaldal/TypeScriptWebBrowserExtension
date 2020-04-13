@@ -9,8 +9,8 @@
 		"url": "git://github.com/mikaelstaldal/TypeScriptWebBrowserExtension"
 	},
 	"scripts": {
-		"dev": "NODE_ENV=development webpack -d",
-		"prod": "NODE_ENV=production webpack -p",
+		"dev": "webpack --mode development --debug --devtool inline-source-map --output-pathinfo",
+		"prod": "webpack --mode production --optimize-minimize",
 		"clean": "rm -rf ./dist",
 		"clean:all": "rm -rf ./dist ./coverage -rf ./node_modules",
 		"lint": "tslint -p tsconfig.json",
