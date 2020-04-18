@@ -3,4 +3,5 @@
 Based on https://github.com/ymdevs/Web-Extension-Starter
 
 ## License
+
 MIT

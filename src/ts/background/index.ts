@@ -11,9 +11,7 @@ function init() {
   browser.runtime.onMessage.addListener(notify);
 }
 
-function notify(
-  message: any /*{id: string, title: string, body: string}*/
-): void {
+function notify(message: any /*{id: string, title: string, body: string}*/): void {
   if (!notifications.has(message.id)) {
     player.play().catch((reason) => {
       console.error(reason);
@@ -34,9 +32,7 @@ function notify(
       });
     window.setTimeout(() => {
       if (notifications.has(message.id)) {
-        browser.notifications
-          .clear(message.id)
-          .then(() => notifications.delete(message.id));
+        browser.notifications.clear(message.id).then(() => notifications.delete(message.id));
       }
     }, 5000);
   }

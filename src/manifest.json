@@ -4,22 +4,14 @@
   "version": "1.0.0",
   "description": "Web Browser Extension skeleton with TypeScript",
   "author": "Mikael Ståldal",
-  "permissions": [
-    "notifications"
-  ],
+  "permissions": ["notifications"],
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
-      "js": [
-        "myContent.js"
-      ],
-      "matches": [
-        "*://*/*"
-      ]
+      "js": ["myContent.js"],
+      "matches": ["*://*/*"]
     }
   ],
   "browser_specific_settings": {

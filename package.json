@@ -1,35 +1,35 @@
 {
-	"name": "typescript-web-browser-extension",
-	"version": "1.0.0",
-	"description": "Web Browser Extension skeleton with TypeScript",
-	"license": "MIT",
-	"author": "Mikael Ståldal",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/mikaelstaldal/TypeScriptWebBrowserExtension"
-	},
-	"scripts": {
-		"dev": "webpack --mode development --debug --devtool inline-source-map --output-pathinfo",
-		"prod": "webpack --mode production --optimize-minimize",
-		"clean": "rm -rf ./dist",
-		"clean:all": "rm -rf ./dist ./coverage -rf ./node_modules",
-		"lint": "tslint -p tsconfig.json",
-		"test": "jest",
-		"test:coverage": "jest --collect-coverage"
-	},
-	"devDependencies": {
-		"@types/jest": "^24.9.1",
-		"@types/node": "^13.5.0",
-		"@types/webpack": "^4.41.3",
-		"awesome-typescript-loader": "^5.2.1",
-		"clean-webpack-plugin": "^3.0.0",
-		"copy-webpack-plugin": "^5.1.1",
-		"jest": "^25.3.0",
-		"ts-jest": "^25.2.1",
-		"tslint": "^6.1.1",
-		"typescript": "^3.8.3",
-		"web-ext-types": "^3.2.1",
-		"webpack": "^4.42.1",
-		"webpack-cli": "^3.3.11"
-	}
+  "name": "typescript-web-browser-extension",
+  "version": "1.0.0",
+  "description": "Web Browser Extension skeleton with TypeScript",
+  "license": "MIT",
+  "author": "Mikael Ståldal",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikaelstaldal/TypeScriptWebBrowserExtension"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --debug --devtool inline-source-map --output-pathinfo",
+    "prod": "webpack --mode production --optimize-minimize",
+    "clean": "rm -rf ./dist",
+    "clean:all": "rm -rf ./dist ./coverage -rf ./node_modules",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "@types/node": "^13.5.0",
+    "@types/webpack": "^4.41.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3",
+    "web-ext-types": "^3.2.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
