@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const { CheckerPlugin } = require("awesome-typescript-loader");
 
 const sourceRootPath = path.join(__dirname, "src");
 const contentScriptsPath = path.join(sourceRootPath, "ts", "contentScripts");
@@ -23,12 +22,9 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx", ".json"],
   },
   module: {
-    rules: [
-      { test: /\.(js|ts|tsx)?$/, loader: "awesome-typescript-loader", exclude: /node_modules/ },
-    ],
+    rules: [{ test: /\.(ts|tsx)?$/, loader: "ts-loader", exclude: /node_modules/ }],
   },
   plugins: [
-    new CheckerPlugin(),
     new CopyWebpackPlugin([
       {
         from: path.join(sourceRootPath, "assets"),

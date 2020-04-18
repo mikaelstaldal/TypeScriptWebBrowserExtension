@@ -4,7 +4,7 @@
     "module": "es2015" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
     "lib": ["dom", "es2015"] /* Specify library files to be included in the compilation. */,
     "removeComments": true /* Do not emit comments to output. */,
-    "noEmit": true /* Do not emit outputs. */,
+    "sourceMap": true /* Generates corresponding '.map' file. */,
     "importHelpers": true /* Import emit helpers from 'tslib'. */,
     "strict": true /* Enable all strict type-checking options. */,
     "noUnusedLocals": true /* Report errors on unused locals. */,

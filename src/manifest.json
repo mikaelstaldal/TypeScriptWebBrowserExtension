@@ -10,8 +10,8 @@
   },
   "content_scripts": [
     {
-      "js": ["myContent.js"],
-      "matches": ["*://*/*"]
+      "matches": ["*://*/*"],
+      "js": ["myContent.js"]
     }
   ],
   "browser_specific_settings": {
