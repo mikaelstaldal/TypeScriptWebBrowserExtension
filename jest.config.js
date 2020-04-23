@@ -2,6 +2,8 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
+  preset: "ts-jest/presets/js-with-ts",
+
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -155,7 +157,7 @@ module.exports = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  transform: { "^.+\\.tsx?$": "ts-jest" },
+  // transform: { "^.+\\.tsx?$": "ts-jest" },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
